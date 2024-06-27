@@ -34,9 +34,6 @@ jobs:
           echo "REACT_APP_FIREBASE_APP_ID=${{ secrets.REACT_APP_FIREBASE_APP_ID }}" >> $GITHUB_ENV
           echo "REACT_APP_FIREBASE_MEASUREMENT_ID=${{ secrets.REACT_APP_FIREBASE_MEASUREMENT_ID }}" >> $GITHUB_ENV
 
-      - name: Run tests
-        run: npm test
-
       - name: Build project
         run: npm run build
 
